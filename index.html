@@ -22,45 +22,88 @@
 </head>
 
 <body class="font-manrope">
-    <header class="container mx-auto px-4 lg:px-24 mt-28">
+    <header class="container mx-auto px-4 lg:px-24 mt-8 lg:mt-16">
         <!-- nav section -->
-        <div></div>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="text-[#FF4240] font-bold"><a>Home</a></li>
+                            <li class="text-[#424247]"><a>About</a></li>
+                            <li class="text-[#424247]"><a>Pages</a></li>
+                            <li class="text-[#424247]"><a>Blog</a></li>
+                            <li class="text-[#424247]"><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <h1 class="text-[#131318] font-extrabold text-xl lg:text-4xl">Hockey<span
+                            class="text-[#FF4240]">’</span>s</h1>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-[#FF4240] font-bold"><a>Home</a></li>
+                        <li class="text-[#424247]"><a>About</a></li>
+                        <li class="text-[#424247]"><a>Pages</a></li>
+                        <li class="text-[#424247]"><a>Blog</a></li>
+                        <li class="text-[#424247]"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-6">
+                    <i class="fa-solid fa-magnifying-glass text-2xl text-[#424247] hidden lg:flex"></i>
+                    <a class="btn bg-[#FF4240] text-white lg:w-[150px]">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
         <!-- banner section -->
-        <div>
-            <div class="carousel w-full h-[230px] lg:h-[590px]">
+        <div class="mt-6 lg:mt-14">
+            <div class="carousel w-full h-[230px] lg:h-[650px]">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="images/1.png" class="w-full" />
-                    <div class="absolute -bottom-3 left-24 space-x-2 lg:bottom-0 lg:left-10 lg:space-x-4 transform -translate-y-1/2">
+                    <div
+                        class="absolute -bottom-3 left-24 space-x-2 lg:bottom-0 lg:left-10 lg:space-x-4 transform -translate-y-1/2">
                         <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
                         <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
                     <img src="images/hockey.avif" class="w-full" />
-                    <div class="absolute -bottom-3 left-24 space-x-2 lg:bottom-0 lg:left-10 lg:space-x-4 transform -translate-y-1/2">
+                    <div
+                        class="absolute -bottom-3 left-24 space-x-2 lg:bottom-0 lg:left-10 lg:space-x-4 transform -translate-y-1/2">
                         <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
                         <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full">
-                    <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-                    <div class="absolute -bottom-3 left-24 space-x-2 lg:bottom-0 lg:left-10 lg:space-x-4 transform -translate-y-1/2">
+                    <img src="images/hockey2.avif" class="w-full" />
+                    <div
+                        class="absolute -bottom-3 left-24 space-x-2 lg:bottom-0 lg:left-10 lg:space-x-4 transform -translate-y-1/2">
                         <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a>
                         <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
                     </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full">
-                    <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-                    <div class="absolute -bottom-3 left-24 space-x-2 lg:bottom-0 lg:left-10 lg:space-x-4 transform -translate-y-1/2">
+                    <img src="images/hockey3.avif" class="w-full" />
+                    <div
+                        class="absolute -bottom-3 left-24 space-x-2 lg:bottom-0 lg:left-10 lg:space-x-4 transform -translate-y-1/2">
                         <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a>
                         <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
                     </div>
                 </div>
             </div>
             <!-- black card -->
-            <div class="lg:-translate-y-60 lg:translate-x-80 mx-auto w-[290px] h-[110px] lg:w-[600px] lg:h-[200px] space-y-2 lg:space-y-4 p-5 lg:p-8 bg-[#131318] rounded-2xl">
+            <div
+                class="mt-2 lg:mt-0 lg:-translate-y-60 lg:translate-x-80 mx-auto w-[290px] h-[110px] lg:w-[600px] lg:h-[200px] space-y-2 lg:space-y-4 p-5 lg:p-8 bg-[#131318] rounded-2xl">
                 <h3 class="text-white text-sm lg:text-2xl font-extrabold">Meet all the heroes from the field</h3>
-                <p class="text-[#ffffff99] text-xs lg:text-base font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+                <p class="text-[#ffffff99] text-xs lg:text-base font-medium">Dit amet consectetur. Condimentum dignissim
+                    adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
             </div>
         </div>
     </header>
@@ -69,46 +112,50 @@
         <section class="container mx-auto px-4 lg:px-24 mt-10 lg:-mt-28">
             <!-- text -->
             <div class="space-y-6 text-center  border-dashed border-t-2 border-[#13131833]">
-                <h2 class="text-[#131318] font-extrabold text-4xl mt-8">Professional Hockeys Club</h2>
-                <p class="text-[#13131899] font-medium pb-8 border-dashed border-b-2 border-[#13131833]">Dit amet
+                <h2 class="text-[#131318] font-extrabold text-xl lg:text-4xl mt-8">Professional Hockeys Club</h2>
+                <p
+                    class="text-[#13131899] text-sm lg:text-base font-medium pb-8 border-dashed border-b-2 border-[#13131833]">
+                    Dit amet
                     consectetur.
                     Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin.
                 </p>
             </div>
             <!-- progress container -->
-            <div class="mt-12 flex flex-col lg:flex-row gap-2 lg:gap-0 justify-around">
+            <div class="mt-12 flex flex-col lg:flex-row gap-8 lg:gap-0 justify-around">
                 <!-- first progress -->
-                <div class="space-y-6 text-center">
+                <div class="space-y-4 lg:space-y-6 text-center">
                     <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
-                    <h3 class="text-2xl font-semibold text-[#131318]">Prayer Facility</h3>
+                    <h3 class="text-xl lg:text-2xl font-semibold text-[#131318]">Prayer Facility</h3>
                     <p class="text-[#13131899]">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
                 </div>
                 <!-- second progress -->
-                <div class="space-y-6 text-center">
+                <div class="space-y-4 lg:space-y-6 text-center">
                     <div class="radial-progress text-green-500" style="--value:95;" role="progressbar">95%</div>
-                    <h3 class="text-2xl font-semibold text-[#131318]">Experienced Coach</h3>
+                    <h3 class="text-xl lg:text-2xl font-semibold text-[#131318]">Experienced Coach</h3>
                     <p class="text-[#13131899]">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
                 </div>
                 <!-- third progress -->
-                <div class="space-y-6 text-center">
+                <div class="space-y-4 lg:space-y-6 text-center">
                     <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar">90%</div>
-                    <h3 class="text-2xl font-semibold text-[#131318]">Senior Player</h3>
+                    <h3 class="text-xl lg:text-2xl font-semibold text-[#131318]">Senior Player</h3>
                     <p class="text-[#13131899]">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
                 </div>
                 <!-- forth progress -->
-                <div class="space-y-6 text-center">
+                <div class="space-y-4 lg:space-y-6 text-center">
                     <div class="radial-progress text-blue-500" style="--value:80;" role="progressbar">80%</div>
-                    <h3 class="text-2xl font-semibold text-[#131318]">Training Ground</h3>
+                    <h3 class="text-xl lg:text-2xl font-semibold text-[#131318]">Training Ground</h3>
                     <p class="text-[#13131899]">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
                 </div>
             </div>
         </section>
         <!--Program section  -->
-        <section class="container mx-auto px-4 lg:px-24 mt-28">
+        <section class="container mx-auto px-4 lg:px-24 mt-10 lg:mt-28">
             <!-- text -->
             <div class="space-y-6 text-center  border-dashed border-t-2 border-[#13131833]">
-                <h2 class="text-[#131318] font-extrabold text-4xl mt-8">Program Sections</h2>
-                <p class="text-[#13131899] font-medium pb-8 border-dashed border-b-2 border-[#13131833]">Dit amet
+                <h2 class="text-[#131318] font-extrabold text-xl lg:text-4xl mt-8">Program Sections</h2>
+                <p
+                    class="text-[#13131899] text-sm lg:text-base font-medium pb-8 border-dashed border-b-2 border-[#13131833]">
+                    Dit amet
                     consectetur.
                     Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin.
                 </p>
@@ -117,45 +164,53 @@
             <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <!-- first image -->
                 <div
-                    class="text-white space-y-4 lg:space-y-6 pt-14 lg:pt-20 pl-6 lg:pl-10 h-[338px] bg-[linear-gradient(180deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/2.png)] bg-no-repeat bg-cover bg-center rounded-2xl">
-                    <h3 class="text-3xl font-extrabold">Junior Program</h3>
-                    <p class="font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
+                    class="text-white space-y-4 lg:space-y-6 pt-6 lg:pt-20 pl-6 lg:pl-10 h-[224px] lg:h-[338px] bg-[linear-gradient(180deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/2.png)] bg-no-repeat bg-cover bg-center rounded-2xl">
+                    <h3 class="text-xl lg:text-3xl font-extrabold">Junior Program</h3>
+                    <p class="text-xs lg:text-base font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                        Elit elit <br>
                         enim sagittis turpis in magna. Id et sed euismod natoque amet <br> nunc morbi nulla. Tortor
                         congue
                         sed et in.</p>
-                    <button class="btn px-5 py-2  text-white bg-[#FF4240] border-none text-xl font-bold">Register
+                    <button
+                        class="btn text-lg lg:text-xl px-5 py-2  text-white bg-[#FF4240] border-none  font-bold">Register
                         Now!</button>
                 </div>
                 <!-- second image -->
                 <div
-                    class="text-white space-y-4 lg:space-y-6 pt-14 lg:pt-20 pl-6 lg:pl-10 h-[338px] bg-[linear-gradient(180deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/3.png)] bg-no-repeat bg-cover bg-center rounded-2xl">
-                    <h3 class="text-3xl font-extrabold">Junior Program</h3>
-                    <p class="font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
+                    class="text-white space-y-4 lg:space-y-6 pt-6 lg:pt-20 pl-6 lg:pl-10 h-[224px] lg:h-[338px] bg-[linear-gradient(180deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/3.png)] bg-no-repeat bg-cover bg-center rounded-2xl">
+                    <h3 class="text-xl lg:text-3xl font-extrabold">Junior Program</h3>
+                    <p class="text-xs lg:text-base font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                        Elit elit <br>
                         enim sagittis turpis in magna. Id et sed euismod natoque amet <br> nunc morbi nulla. Tortor
                         congue
                         sed et in.</p>
-                    <button class="btn px-5 py-2  text-white bg-[#FF4240] border-none text-xl font-bold">Register
+                    <button
+                        class="btn text-lg lg:text-xl px-5 py-2  text-white bg-[#FF4240] border-none font-bold">Register
                         Now!</button>
                 </div>
                 <!-- third image -->
                 <div
-                    class="text-white space-y-4 lg:space-y-6 pt-14 lg:pt-52 pl-6 lg:pl-10 lg:col-span-2 h-[338px] lg:h-[460px] bg-[linear-gradient(180deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/4.png)] bg-no-repeat bg-cover bg-center rounded-2xl">
-                    <h3 class="text-3xl font-extrabold">Junior Program</h3>
-                    <p class="font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
+                    class="text-white space-y-4 lg:space-y-6 pt-6 lg:pt-52 pl-6 lg:pl-10 lg:col-span-2 h-[224px] lg:h-[338px] lg:h-[460px] bg-[linear-gradient(180deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/4.png)] bg-no-repeat bg-cover bg-center rounded-2xl">
+                    <h3 class="text-xl lg:text-3xl font-extrabold">Junior Program</h3>
+                    <p class="text-xs lg:text-base font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                        Elit elit <br>
                         enim sagittis turpis in magna. Id et sed euismod natoque amet <br> nunc morbi nulla. Tortor
                         congue
                         sed et in.</p>
-                    <button class="btn px-5 py-2  text-white bg-[#FF4240] border-none text-xl font-bold">Register
+                    <button
+                        class="btn text-lg lg:text-xl px-5 py-2  text-white bg-[#FF4240] border-none font-bold">Register
                         Now!</button>
                 </div>
             </div>
         </section>
         <!-- products section -->
-        <section class="container mx-auto px-4 lg:px-24 mt-28">
+        <section class="container mx-auto px-4 lg:px-24 mt-10 lg:mt-28">
             <!-- text -->
             <div class="space-y-6 text-center  border-dashed border-t-2 border-[#13131833]">
-                <h2 class="text-[#131318] font-extrabold text-4xl mt-8">Our New Products</h2>
-                <p class="text-[#13131899] font-medium pb-8 border-dashed border-b-2 border-[#13131833]">Dit amet
+                <h2 class="text-[#131318] text-xl lg:text-4xl font-extrabold mt-8">Our New Products</h2>
+                <p
+                    class="text-[#13131899] text-sm lg:text-base font-medium pb-8 border-dashed border-b-2 border-[#13131833]">
+                    Dit amet
                     consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit
                     nullam proin.</p>
             </div>
@@ -273,7 +328,7 @@
                                 <p class="text-[#13131899] font-medium">200</p>
                             </div>
                         </div>
-                        <h4 class="text-[#131318] font-extrabol text-lg lg:text-xl">World Cup Flags Football</h4>
+                        <h4 class="text-[#131318] font-extrabold text-lg lg:text-xl">World Cup Flags Football</h4>
                         <p class="text-[#13131899] font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis.
                         </p>
                         <div class="flex flex-col lg:flex-row flex-start gap-5 lg:items-center">
@@ -350,17 +405,19 @@
             </div>
         </section>
         <!-- clients question section -->
-        <section class="container mx-auto px-4 lg:px-24 mt-28">
+        <section class="container mx-auto px-4 lg:px-24 mt-10 lg:mt-28">
             <!-- text -->
             <div class="space-y-6 text-center  border-dashed border-t-2 border-[#13131833]">
-                <h2 class="text-[#131318] font-extrabold text-4xl mt-8">Clients Question</h2>
-                <p class="text-[#13131899] font-medium pb-8 border-dashed border-b-2 border-[#13131833]">Dit amet
+                <h2 class="text-[#131318] text-xl lg:text-4xl font-extrabold mt-8">Clients Question</h2>
+                <p
+                    class="text-[#13131899] text-sm lg:text-base font-medium pb-8 border-dashed border-b-2 border-[#13131833]">
+                    Dit amet
                     consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit
                     nullam proin.</p>
             </div>
             <!-- image and question container -->
             <div
-                class="mt-12 flex flex-col lg:flex-row gap-12 p-8 border-solid border-2 border-[#13131833] rounded-2xl">
+                class="mt-12 flex flex-col lg:flex-row gap-12 p-4 lg:p-8 border-solid border-2 border-[#13131833] rounded-2xl">
                 <!-- image div -->
                 <div>
                     <img src="images/11.png" alt="">
@@ -370,11 +427,12 @@
                     <!-- first question -->
                     <div class="collapse collapse-plus">
                         <input type="radio" name="my-accordion-3" checked="checked" />
-                        <div class="collapse-title text-xl font-bold text-[#131318]">
+                        <div class="collapse-title text-lg lg:text-xl font-bold text-[#131318]">
                             Our Equipment
                         </div>
                         <div class="collapse-content">
-                            <p class="text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                            <p class="text-[#13131899] text-sm lg:text-base">Dolor sit amet consectetur. Ut urna diam
+                                quis sagittis. Elit
                                 elit enim <br> sagittis turpis in magna.</p>
                         </div>
                     </div>
@@ -382,11 +440,12 @@
                     <!-- second question -->
                     <div class="collapse collapse-plus">
                         <input type="radio" name="my-accordion-3" />
-                        <div class="collapse-title text-xl font-bold text-[#131318]">
+                        <div class="collapse-title text-lg lg:text-xl font-bold text-[#131318]">
                             Hockey Training
                         </div>
                         <div class="collapse-content">
-                            <p class="text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                            <p class="text-[#13131899] text-sm lg:text-base">Dolor sit amet consectetur. Ut urna diam
+                                quis sagittis. Elit
                                 elit enim <br> sagittis turpis in magna.</p>
                         </div>
                     </div>
@@ -394,11 +453,12 @@
                     <!-- third question -->
                     <div class="collapse collapse-plus">
                         <input type="radio" name="my-accordion-3" />
-                        <div class="collapse-title text-xl font-bold text-[#131318]">
+                        <div class="collapse-title text-lg lg:text-xl font-bold text-[#131318]">
                             Private Lessons
                         </div>
                         <div class="collapse-content">
-                            <p class="text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                            <p class="text-[#13131899] text-sm lg:text-base">Dolor sit amet consectetur. Ut urna diam
+                                quis sagittis. Elit
                                 elit enim <br> sagittis turpis in magna.</p>
                         </div>
                     </div>
@@ -406,11 +466,12 @@
                     <!-- forth question -->
                     <div class="collapse collapse-plus">
                         <input type="radio" name="my-accordion-3" />
-                        <div class="collapse-title text-xl font-bold text-[#131318]">
+                        <div class="collapse-title text-lg lg:text-xl font-bold text-[#131318]">
                             Ski Touring
                         </div>
                         <div class="collapse-content">
-                            <p class="text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                            <p class="text-[#13131899] text-sm lg:text-base">Dolor sit amet consectetur. Ut urna diam
+                                quis sagittis. Elit
                                 elit enim <br> sagittis turpis in magna.</p>
                         </div>
                     </div>
@@ -418,11 +479,12 @@
                     <!-- fifth question -->
                     <div class="collapse collapse-plus">
                         <input type="radio" name="my-accordion-3" />
-                        <div class="collapse-title text-xl font-bold text-[#131318]">
+                        <div class="collapse-title text-lg lg:text-xl font-bold text-[#131318]">
                             Booking
                         </div>
                         <div class="collapse-content">
-                            <p class="text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                            <p class="text-[#13131899] text-sm lg:text-base">Dolor sit amet consectetur. Ut urna diam
+                                quis sagittis. Elit
                                 elit enim <br> sagittis turpis in magna.</p>
                         </div>
                     </div>
@@ -430,11 +492,12 @@
                     <!-- sixth question -->
                     <div class="collapse collapse-plus">
                         <input type="radio" name="my-accordion-3" />
-                        <div class="collapse-title text-xl font-bold text-[#131318]">
+                        <div class="collapse-title text-lg lg:text-xl font-bold text-[#131318]">
                             Pricings
                         </div>
                         <div class="collapse-content">
-                            <p class="text-[#13131899]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                            <p class="text-[#13131899] text-sm lg:text-base">Dolor sit amet consectetur. Ut urna diam
+                                quis sagittis. Elit
                                 elit enim <br> sagittis turpis in magna.</p>
                         </div>
                     </div>
@@ -442,11 +505,13 @@
             </div>
         </section>
         <!-- get tuch section -->
-        <section class="container mx-auto px-4 lg:px-24 mt-28">
+        <section class="container mx-auto px-4 lg:px-24 mt-10 lg:mt-28">
             <!-- text -->
             <div class="space-y-6 text-center  border-dashed border-t-2 border-[#13131833]">
-                <h2 class="text-[#131318] font-extrabold text-4xl mt-8">Get In Touch</h2>
-                <p class="text-[#13131899] font-medium pb-8 border-dashed border-b-2 border-[#13131833]">Dit amet
+                <h2 class="text-[#131318] text-xl lg:text-4xl font-extrabold mt-8">Get In Touch</h2>
+                <p
+                    class="text-[#13131899] text-sm lg:text-base font-medium pb-8 border-dashed border-b-2 border-[#13131833]">
+                    Dit amet
                     consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit
                     nullam proin.</p>
             </div>
@@ -483,7 +548,7 @@
                                 <span class="label-text text-[#131318] text-xl font-bold">Your Name</span>
                             </div>
                             <input type="text" placeholder="Enter your full name"
-                                class="input input-bordered text-[#131318] lg:h-[70px]" />
+                                class="input bg-[#13131308] text-[#131318] lg:h-[70px]" />
                         </label>
                     </div>
                     <!-- second form -->
@@ -493,7 +558,7 @@
                                 <span class="label-text text-[#131318] text-xl font-bold">Your Email</span>
                             </div>
                             <input type="text" placeholder="Enter your email"
-                                class="input input-bordered text-[#131318] lg:h-[70px]" />
+                                class="input bg-[#13131308] text-[#131318] lg:h-[70px]" />
                         </label>
                     </div>
                     <!-- third form -->
@@ -503,7 +568,7 @@
                                 <span class="label-text text-[#131318] text-xl font-bold">Subject</span>
                             </div>
                             <input type="text" placeholder="Enter your subject"
-                                class="input input-bordered text-[#131318] lg:h-[70px]" />
+                                class="input bg-[#13131308] text-[#131318] lg:h-[70px]" />
                         </label>
                     </div>
                     <!-- forth form -->
@@ -513,7 +578,7 @@
                                 <span class="label-text text-[#131318] text-xl font-bold">Phone Number</span>
                             </div>
                             <input type="text" placeholder="Enter your phone number"
-                                class="input input-bordered text-[#131318] lg:h-[70px]" />
+                                class="input bg-[#13131308] text-[#131318] lg:h-[70px]" />
                         </label>
                     </div>
                     <!-- text area div -->
@@ -522,7 +587,7 @@
                             <div class="label">
                                 <span class="label-text text-[#131318] text-xl font-bold">Message</span>
                             </div>
-                            <textarea class="textarea textarea-bordered h-[300px] lg:h-[370px] text-[#131318]"
+                            <textarea class="textarea bg-[#13131308] h-[300px] lg:h-[370px] text-[#131318]"
                                 placeholder="Write your message"></textarea>
                         </label>
                         <button
@@ -532,9 +597,57 @@
                 </div>
             </div>
         </section>
+        <!-- social section -->
+        <section class="container mx-auto px-4 lg:px-24 mt-10 lg:mt-20">
+            <div class="bg-[#13131308] h-[130px] lg:h-[150px] pt-10">
+                <h4 class="text-[#131318] text-2xl font-extrabold text-center">Social Media</h4>
+                <div class="flex justify-center gap-10 mt-4">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <footer class="container mx-auto py-12 lg:py-24 px-9 lg:px-36 mt-10 lg:mt-20 footer bg-[#131318] text-base-content">
+        <div>
+            <nav class="space-y-4">
+                <header class="footer-title text-white font-extrabold text-3xl">Get In Touch</header>
+                <p class="text-[#ffffff99] font-medium">Dit amet consectetur. Condimentum <br>  adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam proin.</p>
+                <div class="flex items-center gap-3">
+                    <i class="fa-regular fa-envelope text-red-500"></i>
+                    <p class="text-[#ffffff99] font-medium">hockeys@support.com</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-phone text-red-500"></i>
+                    <p class="text-[#ffffff99] font-medium">(+62) 123-321-543</p>
+                </div>
+            </nav>
+        </div>
+        <nav>
+            <header class="footer-title text-white text-lg font-bold">Company</header>
+            <a class="link link-hover text-[#ffffff99] font-medium">About us</a>
+            <a class="link link-hover text-[#ffffff99] font-medium">Leadership</a>
+            <a class="link link-hover text-[#ffffff99] font-medium">Careers</a>
+            <a class="link link-hover text-[#ffffff99] font-medium">News & Article</a>
+            <a class="link link-hover text-[#ffffff99] font-medium">Legal Notice</a>
+        </nav>
+        <nav>
+            <header class="footer-title text-white text-lg font-bold">Support</header>
+            <a class="link link-hover text-[#ffffff99] font-medium">Help Center</a>
+            <a class="link link-hover text-[#ffffff99] font-medium">FAQ</a>
+            <a class="link link-hover text-[#ffffff99] font-medium">Ticket Support</a>
+            <a class="link link-hover text-[#ffffff99] font-medium">Contact Us</a>
+        </nav>
+        <form>
+            <header class="footer-title text-white text-lg font-bold">Services</header>
+            <a class="link link-hover text-[#ffffff99] font-medium">Academy</a>
+            <a class="link link-hover text-[#ffffff99] font-medium">Group Lesson</a>
+            <a class="link link-hover text-[#ffffff99] font-medium">Private Lesson</a>
+            <a class="link link-hover text-[#ffffff99] font-medium">Hockeys for kids</a>
+            <a class="link link-hover text-[#ffffff99] font-medium">Hockeys for Adult</a>
+        </form>
     </footer>
 
 </body>
