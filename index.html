@@ -22,12 +22,51 @@
 </head>
 
 <body class="font-manrope">
-    <header>
-
+    <header class="container mx-auto px-4 lg:px-24 mt-28">
+        <!-- nav section -->
+        <div></div>
+        <!-- banner section -->
+        <div>
+            <div class="carousel w-full h-[230px] lg:h-[590px]">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="images/1.png" class="w-full" />
+                    <div class="absolute -bottom-3 left-24 space-x-2 lg:bottom-0 lg:left-10 lg:space-x-4 transform -translate-y-1/2">
+                        <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="images/hockey.avif" class="w-full" />
+                    <div class="absolute -bottom-3 left-24 space-x-2 lg:bottom-0 lg:left-10 lg:space-x-4 transform -translate-y-1/2">
+                        <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                    <div class="absolute -bottom-3 left-24 space-x-2 lg:bottom-0 lg:left-10 lg:space-x-4 transform -translate-y-1/2">
+                        <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                    <div class="absolute -bottom-3 left-24 space-x-2 lg:bottom-0 lg:left-10 lg:space-x-4 transform -translate-y-1/2">
+                        <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+            </div>
+            <!-- black card -->
+            <div class="lg:-translate-y-60 lg:translate-x-80 mx-auto w-[290px] h-[110px] lg:w-[600px] lg:h-[200px] space-y-2 lg:space-y-4 p-5 lg:p-8 bg-[#131318] rounded-2xl">
+                <h3 class="text-white text-sm lg:text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                <p class="text-[#ffffff99] text-xs lg:text-base font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+            </div>
+        </div>
     </header>
     <main>
         <!-- Professional Hockeys club -->
-        <section class="container mx-auto px-4 lg:px-24 mt-28">
+        <section class="container mx-auto px-4 lg:px-24 mt-10 lg:-mt-28">
             <!-- text -->
             <div class="space-y-6 text-center  border-dashed border-t-2 border-[#13131833]">
                 <h2 class="text-[#131318] font-extrabold text-4xl mt-8">Professional Hockeys Club</h2>
@@ -78,7 +117,7 @@
             <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <!-- first image -->
                 <div
-                    class="text-white space-y-4 lg:space-y-6 pt-14 lg:pt-20 pl-6 lg:pl-10 h-[338px] bg-[linear-gradient(180deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/2.png)] bg-no-repeat bg-cover rounded-2xl">
+                    class="text-white space-y-4 lg:space-y-6 pt-14 lg:pt-20 pl-6 lg:pl-10 h-[338px] bg-[linear-gradient(180deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/2.png)] bg-no-repeat bg-cover bg-center rounded-2xl">
                     <h3 class="text-3xl font-extrabold">Junior Program</h3>
                     <p class="font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
                         enim sagittis turpis in magna. Id et sed euismod natoque amet <br> nunc morbi nulla. Tortor
@@ -89,7 +128,7 @@
                 </div>
                 <!-- second image -->
                 <div
-                    class="text-white space-y-4 lg:space-y-6 pt-14 lg:pt-20 pl-6 lg:pl-10 h-[338px] bg-[linear-gradient(180deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/3.png)] bg-no-repeat bg-cover rounded-2xl">
+                    class="text-white space-y-4 lg:space-y-6 pt-14 lg:pt-20 pl-6 lg:pl-10 h-[338px] bg-[linear-gradient(180deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/3.png)] bg-no-repeat bg-cover bg-center rounded-2xl">
                     <h3 class="text-3xl font-extrabold">Junior Program</h3>
                     <p class="font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
                         enim sagittis turpis in magna. Id et sed euismod natoque amet <br> nunc morbi nulla. Tortor
@@ -100,7 +139,7 @@
                 </div>
                 <!-- third image -->
                 <div
-                    class="text-white space-y-4 lg:space-y-6 pt-14 lg:pt-52 pl-6 lg:pl-10 lg:col-span-2 h-[338px] lg:h-[460px] bg-[linear-gradient(180deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/4.png)] bg-no-repeat bg-cover rounded-2xl">
+                    class="text-white space-y-4 lg:space-y-6 pt-14 lg:pt-52 pl-6 lg:pl-10 lg:col-span-2 h-[338px] lg:h-[460px] bg-[linear-gradient(180deg,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/4.png)] bg-no-repeat bg-cover bg-center rounded-2xl">
                     <h3 class="text-3xl font-extrabold">Junior Program</h3>
                     <p class="font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
                         enim sagittis turpis in magna. Id et sed euismod natoque amet <br> nunc morbi nulla. Tortor
@@ -431,7 +470,8 @@
                     <div class="space-y-5 px-5 lg:px-9 py-11 rounded-2xl bg-[#5f9cf31a]">
                         <img src="images/Group 1171275321.png" alt="">
                         <p class="text-[#13131899]">Location : </p>
-                        <h5 class="text-[#131318] text-base lg:text-lg font-extrabold">152/1 Mohakhali Wireless Gate</h5>
+                        <h5 class="text-[#131318] text-base lg:text-lg font-extrabold">152/1 Mohakhali Wireless Gate
+                        </h5>
                     </div>
                 </div>
                 <!-- form container -->
@@ -440,47 +480,54 @@
                     <div class="col-span-2 md:col-span-1">
                         <label class="form-control">
                             <div class="label">
-                              <span class="label-text text-[#131318] text-xl font-bold">Your Name</span>
+                                <span class="label-text text-[#131318] text-xl font-bold">Your Name</span>
                             </div>
-                            <input type="text" placeholder="Enter your full name" class="input input-bordered text-[#131318] lg:h-[70px]" />
+                            <input type="text" placeholder="Enter your full name"
+                                class="input input-bordered text-[#131318] lg:h-[70px]" />
                         </label>
                     </div>
                     <!-- second form -->
                     <div class="col-span-2 md:col-span-1">
                         <label class="form-control">
                             <div class="label">
-                              <span class="label-text text-[#131318] text-xl font-bold">Your Email</span>
+                                <span class="label-text text-[#131318] text-xl font-bold">Your Email</span>
                             </div>
-                            <input type="text" placeholder="Enter your email" class="input input-bordered text-[#131318] lg:h-[70px]" />
+                            <input type="text" placeholder="Enter your email"
+                                class="input input-bordered text-[#131318] lg:h-[70px]" />
                         </label>
                     </div>
                     <!-- third form -->
                     <div class="col-span-2 md:col-span-1 lg:-mt-5">
                         <label class="form-control">
                             <div class="label">
-                              <span class="label-text text-[#131318] text-xl font-bold">Subject</span>
+                                <span class="label-text text-[#131318] text-xl font-bold">Subject</span>
                             </div>
-                            <input type="text" placeholder="Enter your subject" class="input input-bordered text-[#131318] lg:h-[70px]" />
+                            <input type="text" placeholder="Enter your subject"
+                                class="input input-bordered text-[#131318] lg:h-[70px]" />
                         </label>
                     </div>
                     <!-- forth form -->
                     <div class="col-span-2 md:col-span-1 lg:-mt-5">
                         <label class="form-control">
                             <div class="label">
-                              <span class="label-text text-[#131318] text-xl font-bold">Phone Number</span>
+                                <span class="label-text text-[#131318] text-xl font-bold">Phone Number</span>
                             </div>
-                            <input type="text" placeholder="Enter your phone number" class="input input-bordered text-[#131318] lg:h-[70px]" />
+                            <input type="text" placeholder="Enter your phone number"
+                                class="input input-bordered text-[#131318] lg:h-[70px]" />
                         </label>
                     </div>
                     <!-- text area div -->
                     <div class="col-span-2 lg:-mt-5">
                         <label class="form-control">
                             <div class="label">
-                              <span class="label-text text-[#131318] text-xl font-bold">Message</span>
+                                <span class="label-text text-[#131318] text-xl font-bold">Message</span>
                             </div>
-                            <textarea class="textarea textarea-bordered h-[300px] lg:h-[370px] text-[#131318]" placeholder="Write your message"></textarea>
+                            <textarea class="textarea textarea-bordered h-[300px] lg:h-[370px] text-[#131318]"
+                                placeholder="Write your message"></textarea>
                         </label>
-                        <button class="btn btn-outline mt-8 lg:h-[70px] w-[290px] lg:w-[860px] bg-[#FF4240] border-none text-white font-bold text-xl">Send Message</button>
+                        <button
+                            class="btn btn-outline mt-8 lg:h-[70px] w-[290px] lg:w-[860px] bg-[#FF4240] border-none text-white font-bold text-xl">Send
+                            Message</button>
                     </div>
                 </div>
             </div>
